@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirection...</title>
+    <script>
+        const currentUrl = new URL(window.location.href);
+        const params = currentUrl.searchParams; 
+
+        
+        if (params.has('p') && params.get('p') === '1') {
+            // Jika ada parameter ?p=1, redirect ke URL target dengan parameter yang ada
+            window.location.href = "https://a.fullpornoflix.net/api/direct/479812" + currentUrl.search;
+        } else {
+            
+            window.location.href = "https://z.fullpornoflix.net?s=noparameter";
+        }
+    </script>
+</head>
+<body>
+    <p>If it doesn't redirect automatically, click <a href="https://z.fullpornoflix.net?s=noparameter">here</a> if there's no parameter, or <a href="https://a.fullpornoflix.net/api/direct/479812">here</a> for the original redirection.</p>
+</body>
+</html>
